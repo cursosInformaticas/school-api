@@ -85,7 +85,7 @@ public class AlumnoResource {
     }
 
     @POST
-    @RolesAllowed("USER")
+    @RolesAllowed("ADMIN")
     public Response createAlumno(@Valid Alumno alumno) {
         Alumno created = alumnoService.createAlumno(alumno);
 
